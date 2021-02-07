@@ -1,0 +1,20 @@
+<html>
+
+    <body>
+        在借书籍列表
+
+        <table>
+            <tr><th>书名</th><th>作者名</th><th>图书类型</th><th>借书日期</th><th>还书期限</th><th>借阅人</th></tr>
+            <tr th:each="i:${books}">
+                <td th:text="${i.book_name}"></td>
+                <td th:text="${i.book_writer}"></td>
+                <td th:text="${i.book_type}"></td>
+                <td th:text="${i.book_b}"></td>
+                <td th:text="${i.book_r}"></td>
+                <td th:text="${i.book_person}"></td>
+                <!-- <td><a th:href="@{update(aa=${i.uid})}">修改</a></td> -->
+            </tr>
+        
+        </table>
+    </body>
+</html>

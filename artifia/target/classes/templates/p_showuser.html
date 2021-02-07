@@ -1,0 +1,18 @@
+<html>
+
+    <body>
+        用户信息
+        <table>
+            <tr><th>用户id</th><th>用户名</th></tr>
+            <tr th:each="i:${users}">
+                <td th:text="${i.user_id}"></td>
+                <td th:text="${i.user_name}"></td>
+                <!-- <td><a th:href="@{update(aa=${i.uid})}">修改</a></td> -->
+            </tr>
+        
+        </table>
+
+    </body>
+
+
+</html>

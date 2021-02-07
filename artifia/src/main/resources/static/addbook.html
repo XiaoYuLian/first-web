@@ -1,0 +1,24 @@
+<html>
+    <!-- <html lang="en" xmlns:th="http://www.thymeleaf.org"></html> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <head>
+        <style>
+            body{
+                background-image:url("background00.jpg");
+            }
+        </style>
+
+    </head>
+    <body>
+        借阅书籍
+        <form name="tabke" action="addbook">
+            <tr><td>图书名称：</td><td><input name="book_name"></td></tr>
+            <tr><td>图书作者：</td><td><input name="book_writer" ></td></tr>
+            <tr><td>图书类别：</td><td><input name="book_type" ></td></tr><br/>
+            <tr><td>借书日期：</td><td><input name="book_b" ></td></tr>
+            <tr><td>应还日期：</td><td><input name="book_r" ></td></tr>
+            <tr><td>借图书人：</td><td><input name="book_person" ></td></tr><br/>
+            <tr><td><input type ="submit"></td><td><input type ="reset"></td></tr>
+        </form>
+    </body>
+</html>

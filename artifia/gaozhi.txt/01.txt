@@ -1,0 +1,8 @@
+参考网址：github.com/jiashunzhang/stockmis
+table :
+        <tr>行  <td>格  <th>表格标题
+        <tr th:each="i:%(info) >            //对info里面的每一个I
+
+git clone@网址
+mysqldump 名字>地址>-u -p 文件名                      //用户名密码
+数据库中        source 文件名

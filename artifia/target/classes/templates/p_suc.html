@@ -1,0 +1,41 @@
+<html>
+    <meta charset="UTF-8">
+    <head>
+
+    <body background="background2.png" style=" background-repeat:no-repeat ;background-size:100% 100%;
+    background-attachment: fixed;">    
+
+    </head>
+    <body>
+        welcome<p th:text="${user_name}"></p>
+        <!-- <a href="/main">主页</a> -->
+        欢迎使用个人图书管理系统
+
+        <table border="1">
+            <tr>
+            <td style="vertical-align: top;">
+            <div>
+                <ul>
+                    <li><a href="p_showuser.html" target="iframe_a">显示用户</a></li><br>
+                    
+                    <li><a href="p_adduser.html" target="iframe_a">添加用户</a></li><br>
+
+                    <li><a href="updateuserp.html" target="iframe_a">修改用户密码</a></li><br>
+
+                    <li><a href="showbooks.html" target="iframe_a">查看书籍</a></li><br>
+
+                    <li><a href="addbook.html" target="iframe_a">借阅图书</a></li><br>
+
+                    <li><a href="delbook.html" target="iframe_a">归还图书</a></li><br>
+                </ul>
+            </div>
+            </td>
+            <td>
+            <iframe src="welcome.html" name="iframe_a" frameborder="0" width="1000" height="768">
+            </iframe>
+            </td>
+            </tr>
+            </table>
+
+    </body>
+</html>
